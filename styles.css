@@ -281,3 +281,397 @@
     padding-left: 25px;
     padding-right: 10px;
 }
+/* Responsive Design CSS */
+/* ==================== TABLET (max-width: 992px) ==================== */
+@media (max-width: 992px) {
+
+  /* Navbar */
+  .navBar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 8px 12px;
+    gap: 8px;
+  }
+
+  .logoSection {
+    order: 1;
+    margin: 0;
+  }
+
+  .loginBox {
+    order: 2;
+    margin-left: auto;
+  }
+
+  .becomeSellerBox {
+    order: 3;
+  }
+
+  .moreBox {
+    order: 4;
+  }
+
+  .cartBox {
+    order: 5;
+  }
+
+  .searchBox {
+    order: 6;
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  /* Menu Bar */
+  .belowNavBar {
+    justify-content: flex-start;
+    padding: 0 8px;
+  }
+
+  .smallCard {
+    margin: 0 4px;
+  }
+
+  /* Hero */
+  .heroSection {
+    height: 200px;
+  }
+
+  /* Item Section */
+  .itemSection {
+    justify-content: flex-start;
+    padding: 10px 12px;
+  }
+
+  .item {
+    min-width: 150px;
+    width: 170px;
+    height: auto;
+    min-height: 250px;
+    padding: 8px 6px;
+  }
+
+  .item:first-child {
+    min-width: 160px;
+    width: 170px;
+  }
+
+  .itemHeadName {
+    font-size: 20px;
+  }
+
+  .itemImg {
+    height: 140px;
+  }
+
+  /* Footer */
+  .footerLeft {
+    width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .footerRight {
+    width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .footerSection {
+    flex-direction: column;
+  }
+}
+
+/* ==================== MOBILE (max-width: 600px) ==================== */
+@media (max-width: 600px) {
+
+  /* Navbar */
+  .navBar {
+    padding: 8px 10px;
+    gap: 6px;
+    justify-content: space-between;
+  }
+
+  .logoSection {
+    order: 1;
+    flex-shrink: 0;
+  }
+
+  .flipkart-logo {
+    width: 60px;
+    height: 16px;
+  }
+
+  .logo-text {
+    font-size: 9px;
+    width: 60px;
+  }
+
+  #plus {
+    font-size: 9px;
+  }
+
+  .loginBox {
+    order: 2;
+    margin-left: auto;
+  }
+
+  .login {
+    padding: 5px 16px;
+    font-size: 13px;
+  }
+
+  .becomeSellerBox {
+    display: none;
+  }
+
+  .moreBox {
+    display: none;
+  }
+
+  .cartBox {
+    order: 3;
+    font-size: 13px;
+  }
+
+  .searchBox {
+    order: 4;
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
+  /* Menu Bar */
+  .belowNavBar {
+    justify-content: flex-start;
+    padding: 0 4px;
+  }
+
+  .smallCard {
+    min-width: 70px;
+    width: 70px;
+    height: 90px;
+    padding: 6px 4px;
+    margin: 0 2px;
+  }
+
+  .card {
+    height: 48px;
+    width: 48px;
+  }
+
+  .smallCard p {
+    font-size: 10px;
+    margin-top: 2px;
+  }
+
+  /* Hero */
+  .heroSection {
+    height: 140px;
+  }
+
+  /* Item Section */
+  .itemSection {
+    justify-content: flex-start;
+    padding: 8px 8px;
+    min-height: unset;
+  }
+
+  .item {
+    min-width: 130px;
+    width: 140px;
+    height: auto;
+    min-height: 220px;
+    padding: 6px 4px;
+  }
+
+  .item:first-child {
+    min-width: 130px;
+    width: 140px;
+  }
+
+  .itemHeadName {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .viewAllButton {
+    width: 80px;
+    height: 32px;
+  }
+
+  .viewAllText {
+    font-size: 11px;
+  }
+
+  .itemImg {
+    height: 110px;
+  }
+
+  .itemDescription {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .buyNowText {
+    font-size: 13px;
+    padding-top: 5px;
+  }
+
+  /* Footer */
+  .footerSection {
+    flex-direction: column;
+    min-height: unset;
+    height: auto;
+  }
+
+  .footerLeft {
+    width: 100%;
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0 16px;
+    gap: 0;
+  }
+
+  .footerRight {
+    width: 100%;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0 16px;
+    gap: 0;
+  }
+
+  .footerInfo {
+    width: 48%;
+    min-width: 130px;
+    padding-top: 24px;
+    padding-bottom: 12px;
+  }
+
+  .footerInfoHeading {
+    font-size: 11px;
+  }
+
+  .footerContent {
+    font-size: 11px;
+    line-height: 1.9;
+  }
+
+  .footerExtras {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 16px;
+    font-size: 11px;
+  }
+
+  .footerExtras img {
+    height: 22px;
+  }
+}
+
+/* ==================== SMALL MOBILE (max-width: 380px) ==================== */
+@media (max-width: 380px) {
+
+  .login {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .cartBox {
+    font-size: 12px;
+  }
+
+  .smallCard {
+    min-width: 62px;
+    width: 62px;
+  }
+
+  .card {
+    height: 40px;
+    width: 40px;
+  }
+
+  .smallCard p {
+    font-size: 9px;
+  }
+
+  .item {
+    min-width: 115px;
+    width: 120px;
+  }
+
+  .item:first-child {
+    min-width: 115px;
+    width: 120px;
+  }
+
+  .itemHeadName {
+    font-size: 14px;
+  }
+
+  .viewAllButton {
+    width: 70px;
+    height: 28px;
+  }
+
+  .viewAllText {
+    font-size: 10px;
+  }
+
+  .itemImg {
+    height: 90px;
+  }
+}
+
+/* ==================== LARGE DESKTOP (min-width: 1280px) ==================== */
+@media (min-width: 1280px) {
+
+  .navBar {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .logoSection {
+    margin-right: 10px;
+  }
+
+  .searchBox {
+    flex: 0 0 auto;
+    width: 480px;
+  }
+
+  .cartBox {
+    margin-right: 0;
+  }
+
+  .belowNavBar {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .itemSection {
+    flex-wrap: nowrap;
+    overflow-x: visible;
+  }
+
+  .item {
+    height: 314px;
+    width: 232px;
+    min-width: unset;
+  }
+
+  .itemImg {
+    height: 200px;
+  }
+
+  .footerLeft {
+    margin-left: 65px;
+  }
+}
