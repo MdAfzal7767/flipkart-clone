@@ -1,287 +1,353 @@
+/* ==================== RESET & BASE ==================== */
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
 }
 
+/* ==================== NAVBAR ==================== */
 .navBar {
-    width: 100%;
-    height: 56px;
-    background-color: #2874f0;
-    color: #f0f0f0;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  width: 100%;
+  height: 56px;
+  background-color: #2874f0;
+  color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 16px;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .logoSection {
-    width: 80px;
-    display: inline;
-    margin: 2px 0px 2px 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
 }
 
 .flipkart-logo {
-    width: 75px;
-    height: 20.11px;
-    margin-top: 15px;
+  width: 75px;
+  height: 20.11px;
+  margin-top: 4px;
 }
 
 .logo-text {
-    font-family: 'Poppins', sans-serif;
-    font-size: 11px;
-    font-style: italic;
-    width: 75px;
-    height: 15.4px;
-    margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-style: italic;
+  width: 75px;
+  height: 15.4px;
 }
 
-
-
 #plus {
-    color: #ffe500;
-    font-size: 11px;
+  color: #ffe500;
+  font-size: 11px;
 }
 
 .searchBox {
-    width: 340px;
-    display: flex;
-    margin-right: 10px;
+  display: flex;
+  flex: 1;
+  max-width: 564px;
+  min-width: 0;
 }
 
 .input {
-    height: 36px;
-    width: 564px;
-    border-radius: 5px;
-    padding: 0 16px;
-    border-radius: 2px 0 0 2px;
-    border: 0;
-    outline: 0 none;
-
+  height: 36px;
+  width: 100%;
+  border-radius: 2px 0 0 2px;
+  padding: 0 16px;
+  border: 0;
+  outline: 0 none;
+  font-size: 14px;
 }
 
 .search-logo {
-    height: 36px;
-    width: 44px;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-    cursor: pointer;
-    padding: 4px 12px 2px 8px;
-    background-color: #fff;
-    border: 0;
-    outline: 0 none;
-    color: #2874f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 36px;
+  width: 44px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  cursor: pointer;
+  padding: 4px 12px 2px 8px;
+  background-color: #fff;
+  border: 0;
+  outline: 0 none;
+  color: #2874f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .loginBox {
-    margin-right: 10px;
+  flex-shrink: 0;
 }
 
 .login {
-    color: #2874f0;
-    background-color: #fff;
-    cursor: pointer;
-    border-radius: 2px;
-    height: 32px;
-    padding: 5px 40px;
-    border: 1px solid #dbdbdb;
+  color: #2874f0;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  height: 32px;
+  padding: 5px 28px;
+  border: 1px solid #dbdbdb;
+  white-space: nowrap;
+  font-size: 14px;
 }
 
 .becomeSellerBox {
-    width: 155px;
-    margin-right: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 .moreBox {
-    width: 50px;
-    margin-right: 10px;
-    align-items: center;
-    justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  font-size: 14px;
 }
 
 .cartBox {
-    width: 65px;
-    margin-right: 150px;
-    align-items: center;
-    justify-content: center;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
+/* ==================== MENU BAR ==================== */
 .belowNavBar {
-    display: flex;
-    max-width: 1280px;
-    color: #212121;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  color: #212121;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow-x: auto;
+  background-color: #fff;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.belowNavBar::-webkit-scrollbar {
+  display: none;
 }
 
 .smallCard {
-    /* border: 2px solid red; */
-    width: 94px;
-    height: 112px;
-    padding: 10px;
-    margin: 0px 20px;
+  width: 94px;
+  min-width: 80px;
+  height: 112px;
+  padding: 10px;
+  margin: 0px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
 }
 
 .card {
-    height: 64px;
-    width: 64px;
+  height: 64px;
+  width: 64px;
+  object-fit: contain;
 }
-
 
 .smallCard p {
-    text-align: center;
+  text-align: center;
+  font-size: 13px;
+  margin-top: 4px;
 }
 
+/* ==================== DIVIDER ==================== */
+.line {
+  width: 100%;
+  border: none;
+  border-top: 8px solid rgba(213, 207, 207, 0.617);
+}
 
+/* ==================== HERO SECTION ==================== */
 .heroSection {
-    background-image: url('heroImg.png');
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1680px;
-    height: 280px;
+  background-image: url('heroImg.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 280px;
 }
 
+/* ==================== ITEM SECTIONS ==================== */
 .itemSection {
-    max-width: 1434px;
-    height: 314px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  width: 100%;
+  max-width: 1434px;
+  margin: 0 auto;
+  min-height: 314px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 10px 8px;
+  background-color: #fff;
+}
+
+.itemSection::-webkit-scrollbar {
+  display: none;
 }
 
 .item {
-    width: 232px;
-    height: 314px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  width: 200px;
+  min-width: 160px;
+  height: 314px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-shrink: 0;
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* First item (heading + view all button) */
+.item:first-child {
+  min-width: 180px;
+  width: 200px;
 }
 
 .itemImg {
-    height: 200px;
+  height: 180px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .itemDescription {
-    font-size: 14px;
-    font-weight: 500;
-    margin-top: 15px;
-    text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 15px;
+  text-align: center;
 }
 
 .buyNowText {
-    color: #388e3c;
-    padding-top: 8px;
-    font-size: 16px;
-    text-align: center;
+  color: #388e3c;
+  padding-top: 8px;
+  font-size: 16px;
+  text-align: center;
 }
 
 .itemHeadName {
-    word-wrap: break-word;
-    font-size: 30px;
-    line-height: 1.38;
-    color: #2e2e2e;
-    text-align: center;
-
+  word-wrap: break-word;
+  font-size: 26px;
+  line-height: 1.38;
+  color: #2e2e2e;
+  text-align: center;
 }
 
 .viewAllSection {
-    margin-top: 24px;
-    text-align: center;
+  margin-top: 24px;
+  text-align: center;
 }
 
-
-
 .viewAllButton {
-    background: #2874f0;
-    color: #fff;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
-    border: none;
-    height: 38px;
-    width: 96px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: #2874f0;
+  color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+  border: none;
+  height: 38px;
+  width: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .viewAllText {
-    font-size: 13px;
-
+  font-size: 13px;
 }
 
-
-.line {
-    width: 100%;
-    border: none;
-    border-top: 8px solid rgba(213, 207, 207, 0.617);
-}
-
+/* ==================== FOOTER ==================== */
 .footerSection {
-    max-width: 1719px;
-    /* height: 346px; */
-    height: 300px;
-    background-color: #172337;
-    display: flex;
-
+  width: 100%;
+  background-color: #172337;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 300px;
+  height: auto;
 }
 
 .footerLeft {
-    display: flex;
-    width: 50%;
-    margin-left: 65px;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-left: 65px;
+  justify-content: space-evenly;
 }
 
 .footerInfo {
-    width: 252px;
-    height: 194px;
-    padding-top: 40px;
+  width: 180px;
+  min-width: 140px;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .footerInfoHeading {
-    color: #878787;
-    font-size: 12px;
-    font-weight: 400;
-    margin-bottom: 9px;
+  color: #878787;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 9px;
+  text-transform: uppercase;
 }
 
 .footerContent {
-    color: #ffffff;
-    font-size: 12px;
-
-    line-height: 2;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 2;
 }
 
 .footerRight {
-    display: flex;
-    width: 50%;
-    margin-right: 30px;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  justify-content: space-evenly;
 }
 
 .footerExtras {
-    margin-top: 0.35px;
-    background-color: #172337;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    max-width: 1719px;
-    height: 70px;
-    color: #ffffff;
-    font-size: 14px;
-    line-height: 2;
-    padding-left: 25px;
-    padding-right: 10px;
+  background-color: #172337;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  min-height: 70px;
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 2;
+  padding: 10px 25px;
+  gap: 8px;
+  border-top: 1px solid #2a3a52;
 }
-/* Responsive Design CSS */
+
+.footerExtras span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.footerExtras img {
+  height: 28px;
+  object-fit: contain;
+}
+
 /* ==================== TABLET (max-width: 992px) ==================== */
 @media (max-width: 992px) {
 
